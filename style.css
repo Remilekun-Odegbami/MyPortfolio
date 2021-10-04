@@ -1,0 +1,214 @@
+:root{
+    --prim: #13153D;
+    --sec: #191c46;
+    --hover: #061843;
+    --welcome: linear-gradient(
+        to bottom,
+         #323464,
+         #606290,
+         #9496b4,
+         #1f2152
+         );
+         --nav: linear-gradient(
+             to left,
+              #323464,
+              #606290,
+              #9496b4,
+              #1f2152
+    );
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color:var(--prim);
+    color: rgb(248, 240, 240);
+    font-family:  'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn{
+    margin: 10px;
+    padding: 10px 15px;
+    border: 2px solid var(--prim);
+    border-radius: 10px;
+    transition: all 0.7s;
+}
+
+.btn:hover{
+    padding: 10px 20px;
+    color: #fff;
+    background-color: var(--sec);
+    border: 3px solid #fff;
+
+}
+
+.section-title {
+    margin: 30px;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.soc-list{
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.soc-item a{
+    margin-left: 30px;
+    color: #fff;    
+}
+
+.soc-item a:hover{
+    font-weight: 600;
+    color: var(--hover);
+    background-color: #fff;
+}
+
+.soc-item i{
+    display: none;
+}
+.dropdown-div select {
+    margin: 10px auto;
+    padding: 6px 0;
+    width: 50%;
+    font-size: 1.3em;
+    color: #fff;
+    background: var(--hover);
+    border: 1px solid white;
+    outline: none;
+}
+
+.section2{
+    display: flex;
+    flex-direction: row;
+}
+
+.section2 img{
+    border-radius: 50%;
+    width: 20%;
+    height: auto;
+}
+
+.section3 {
+    height: 50vh;
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    background: var(--welcome);
+}
+
+.section3 .intro{
+    padding: 40px;
+}
+
+.section3 span{
+    color: var(--prim);
+}
+
+.about{
+    background-color: var(--sec);
+    margin-top: -30px;
+}
+
+/* .about .content{
+    display: flex;
+    flex-direction: row;
+} */
+
+.skills{
+    background: var(--prim);
+    margin-bottom: 30px;
+}
+
+
+.skills img{
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    /* border: 1px solid red; */
+}
+
+.projects{
+    background-color: var(--sec);
+}
+
+.card  {
+    /* margin-left: 3px; */
+    color: rgb(41, 39, 39);
+    border:2px solid var(--prim);
+    border-radius: 15px;
+}
+
+.card img{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.card .card-text h3{
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    height: 60px;
+    margin: 20px 0;
+    border-bottom: 2px solid rgb(118, 118, 165);
+}
+
+.card .btn{
+    margin-bottom: 40%;
+}
+
+
+
+@media screen and (max-width: 360px) {
+    .dropdown-div select{
+        position: relative;
+        top: 50px;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .top-nav-list{
+        display: none;
+    }
+    
+    .soc-item{
+        margin: 30px;
+    }
+    .soc-item a{
+        display: none;
+    }
+    .soc-item i{
+        display: inline-block;
+    }
+    .dropdown-div select{
+        position: relative;
+        top: -70px;
+        right: -40%;
+    }
+    .about-content{
+        margin: 30px 0;
+    }
+   
+}
+
