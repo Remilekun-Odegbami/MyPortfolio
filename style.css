@@ -212,3 +212,8 @@ a{
    
 }
 
+
+.social-cards .card {
+    width: 200px;
+    text-align: center;
+}
