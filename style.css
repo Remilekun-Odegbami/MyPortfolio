@@ -18,6 +18,8 @@
     );
 }
 
+/* generic */
+
 *{
     box-sizing: border-box;
 }
@@ -47,6 +49,7 @@ a{
     padding: 10px 15px;
     border: 2px solid var(--prim);
     border-radius: 10px;
+    cursor: pointer;
     transition: all 0.7s;
 }
 
@@ -64,6 +67,14 @@ a{
     text-align: center;
     text-transform: capitalize;
 }
+
+span{
+    color: rgb(170, 36, 36);
+}
+
+/* end generic */
+
+/* header */
 
 .soc-list{
     display: flex; 
@@ -84,6 +95,7 @@ a{
 .soc-item i{
     display: none;
 }
+
 .dropdown-div select {
     margin: 10px auto;
     padding: 6px 0;
@@ -102,9 +114,13 @@ a{
 
 .section2 img{
     border-radius: 50%;
-    width: 20%;
+    width: 30%;
     height: auto;
 }
+
+/* end header */
+
+/* main */
 
 .section3 {
     height: 50vh;
@@ -127,16 +143,27 @@ a{
     margin-top: -30px;
 }
 
-/* .about .content{
-    display: flex;
-    flex-direction: row;
-} */
+.section4 .about-content{
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+    /* margin-left: 1px; */
+}
+
+.section4 .content img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 5px 10px 5px white;
+}
 
 .skills{
     background: var(--prim);
     margin-bottom: 30px;
 }
-
 
 .skills img{
     min-width: 300px;
@@ -150,44 +177,139 @@ a{
     background-color: var(--sec);
 }
 
-.card  {
-    /* margin-left: 3px; */
+.section6 .card  {
     color: rgb(41, 39, 39);
     border:2px solid var(--prim);
     border-radius: 15px;
 }
 
-.card img{
+.section6 .card img{
     margin-top: 10px;
-    width: 100%;
-    height: auto;
+    max-width: 350px;
+    max-height: 100px;
+    min-width: 350px;
+    min-height: 100px;
+    object-fit: cover;
+    
 }
 
-.card .card-text h3{
+.section6 .card .card-text h3{
     font-weight: bold;
     text-transform: capitalize;
     text-align: center;
-    height: 60px;
-    margin: 20px 0;
-    border-bottom: 2px solid rgb(118, 118, 165);
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-.card .btn{
-    margin-bottom: 40%;
+.section6 .card .btn{
+    margin-bottom: 10%;
 }
 
+.section6 .card .app{
+    margin-left: 90px;
+}
 
+.section7 .card{
+    margin-left: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--prim);
+    width: max-content;
+    display: flex;
+    flex-wrap: nowrap;
+}
 
-@media screen and (max-width: 360px) {
-    .dropdown-div select{
-        position: relative;
-        top: 50px;
+.section7 .fa{
+    text-align: center;
+    margin: 5px 0;
+    font-size: 2em;
+    color: var(--prim);
+}
+
+.section7 h3{
+    padding-right: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+
+.section7 a{
+    padding: 40px 50px 40px 0;
+    font-size: 1.3em;
+    font-weight: 400;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+
+.section7 .send-msg form{
+    margin: 0 auto;
+}
+
+.section7 .send-msg .form-input input, .section7 .send-msg .form-input textarea{
+    margin-bottom: 20px;
+    margin-left: 20%;
+    padding: 10px;
+    width: 70%;
+    border: 3px solid var(--sec);
+    border-radius: 10px;
+    outline: none;
+}
+
+.section7 .send-msg button{
+    margin: 0px auto;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s;
+}
+.section7 .send-msg button:hover{
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: white;
+    color: var(--sec);    
+}
+
+/* end main */
+
+/* footer */
+
+.footer{
+    background-color: var(--sec);
+}
+
+.footer .colophon-text{
+    text-align: center;
+}
+
+/* end footer */
+
+@media screen and (max-width: 1200px) {
+    .section6 .card .app{
+        margin-left: 50px;
     }
-
-
+    .section6 .card img{
+        max-width: 250px;
+        max-height: 100px;
+        min-width: 250px;
+        min-height: 100px;
+    }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 960px) {
+    .section6 .card .app{
+        margin-left: 30px;
+    }
+    .section6 .card img{
+        max-width: 200px;
+        max-height: 100px;
+        min-width: 200px;
+        min-height: 100px;
+    }
+}
+
+@media screen and (max-width: 770px) {
     .top-nav-list{
         display: none;
     }
@@ -206,9 +328,92 @@ a{
         top: -70px;
         right: -40%;
     }
+
     .about-content{
         margin: 30px 0;
+    }
+
+    .section7 .card{
+        margin-bottom: 10px;
+        margin-left: 0;
+        padding-bottom: 30px;
+    }
+
+    .section6 .card .app{
+        margin-left: 30px;
+    }
+
+    .section6 .card img{
+        max-width: 230px;
+        max-height: 150px;
+        min-width: 230px;
+        min-height: 150px;
+        object-fit: cover;
     }
    
 }
 
+/* @media screen and (min-width: 570px) {
+    .section6 .card img{
+        max-width: 500px;
+        max-height: 100px;
+        min-width: 500px;
+        min-height: 100px;
+    }
+    .section6 .card .app{
+        margin-left: 170px;
+    }
+} */
+
+@media screen and (max-width: 560px) {
+    .section6 .card .app{
+        margin-left: 100px;
+    }
+    .section6 .card img{
+        max-width: 360px;
+        max-height: 150px;
+        min-width: 360px;
+        min-height: 150px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .section6 .card img{
+        max-width: 320px;
+        max-height: 150px;
+        min-width: 320px;
+        min-height: 150px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .dropdown-div select{
+        position: relative;
+        top: 50px;
+    }
+    
+    .section6 .card .app{
+        margin-left: 60px;
+    }
+    
+    .section6 .card img{
+        max-width: 270px;
+        max-height: 100px;
+        min-width: 270px;
+        min-height: 100px;
+        object-fit: cover;
+    }
+    
+}
+
+/* @media screen and (max-width: 310px) {
+    .section6 .card img{
+        max-width: 200px;
+        max-height: 100px;
+        min-width: 200px;
+        min-height: 100px;
+        object-fit: cover;
+    }    
+} */
