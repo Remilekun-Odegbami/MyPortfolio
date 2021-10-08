@@ -219,6 +219,11 @@ span{
     flex-wrap: nowrap;
 }
 
+.section7 .social-cards .card{
+    width: 200px;
+    text-align: center;
+}
+
 .section7 .fa{
     text-align: center;
     margin: 5px 0;
@@ -235,7 +240,7 @@ span{
 }
 
 .section7 a{
-    padding: 40px 50px 40px 0;
+    /* padding: 40px 50px 40px 0; */
     font-size: 1.3em;
     font-weight: 400;
     white-space: nowrap;
