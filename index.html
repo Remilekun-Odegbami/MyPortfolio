@@ -18,6 +18,11 @@
     <title>Rem Dev</title>
 </head>
 <body>
+
+    <div class="scrollToTop-btn">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+
     <header class="header" id="header">
         <section class="soial-media">
             <div class="container">
@@ -51,13 +56,13 @@
                         </nav>
                             <!-- display on small devices -->
                             <div class="dropdown-div d-sm-block d-md-none">
-                            <select name="top-nav" id="topNav">
+                            <select onchange="location=this.value;" name="top-nav" id="topNav">
                                 <option value="" class="d-none"> Take Me To</option>
-                                <option value="home">Home</option>
-                                <option value="about">About</option>
-                                <option value="skills">Skills</option>
-                                <option value="projects"> <a href="#projects" class="nav-link"></a> Projects</option>
-                                <option value="contact">Contact</option>
+                                <option value="#home" >Home</option>
+                                <option value="#about">About</option>
+                                <option value="#skills">Skills</option>
+                                <option value="#projects">Projects</option>
+                                <option value="#contact">Contact</option>
                             </select>
                         </div>
                     </div>
@@ -273,7 +278,7 @@
                     <h2 class="section-title"> Send me a message </h2>                        
                 </div>
                 <div class="send-msg">
-                        <form action="https://formsubmit.co/remilekun@mscodingacademies.org" method="POST">
+                        <form action="00e4f7abf924afeaedc1aaad3148d4ff" method="POST">
                             <div class="form-input">
                                 <input type="text" id="name" name="name" placeholder="Full Name" required>                              
                             </div>
@@ -299,6 +304,8 @@
             </div>
         </footer>
     </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
 

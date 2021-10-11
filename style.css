@@ -72,6 +72,22 @@ span{
     color: rgb(170, 36, 36);
 }
 
+.scrollToTop-btn{
+    width: 50px;
+    height: 40px;
+    right: 0;
+    position: fixed;
+    bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--sec);
+    background-color: whitesmoke;
+    z-index: 999;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
 /* end generic */
 
 /* header */
@@ -253,9 +269,9 @@ span{
 
 .section7 .send-msg .form-input input, .section7 .send-msg .form-input textarea{
     margin-bottom: 20px;
-    margin-left: 20%;
+    margin-left: 10%;
     padding: 10px;
-    width: 70%;
+    width: 75%;
     border: 3px solid var(--sec);
     border-radius: 10px;
     outline: none;
@@ -302,7 +318,7 @@ span{
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
     .section6 .card .app{
         margin-left: 30px;
     }
@@ -355,20 +371,13 @@ span{
         min-height: 150px;
         object-fit: cover;
     }
+
+    .section7 .send-msg .form-input input, .section7 .send-msg .form-input textarea{
+        width: 100%;
+        margin-left: 0;
+    }
    
 }
-
-/* @media screen and (min-width: 570px) {
-    .section6 .card img{
-        max-width: 500px;
-        max-height: 100px;
-        min-width: 500px;
-        min-height: 100px;
-    }
-    .section6 .card .app{
-        margin-left: 170px;
-    }
-} */
 
 @media screen and (max-width: 560px) {
     .section6 .card .app{
@@ -412,13 +421,3 @@ span{
     }
     
 }
-
-/* @media screen and (max-width: 310px) {
-    .section6 .card img{
-        max-width: 200px;
-        max-height: 100px;
-        min-width: 200px;
-        min-height: 100px;
-        object-fit: cover;
-    }    
-} */
